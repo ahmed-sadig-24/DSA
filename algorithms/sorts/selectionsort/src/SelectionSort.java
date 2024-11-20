@@ -2,7 +2,9 @@ import java.util.Arrays;
 
 public class SelectionSort {
       public static void selectionSort(int[] array) {
+            // move on boundry of unsorted array
             for (int i = 0; i < array.length - 1; i++) {
+                  // find the min element of unsorted array
                   int minIndex = i;
                   for (int j = i + 1; j < array.length; j++) {
                         if (array[j] < array[minIndex]) {
