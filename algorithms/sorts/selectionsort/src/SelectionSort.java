@@ -11,6 +11,7 @@ public class SelectionSort {
                               minIndex = j;
                         }
                   }
+                  // swap min element with 1st element
                   if (i != minIndex) {
                         int temp = array[i];
                         array[i] = array[minIndex];
