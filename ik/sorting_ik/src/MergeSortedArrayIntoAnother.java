@@ -38,7 +38,6 @@ public class MergeSortedArrayIntoAnother {
 
             System.out.println(input2);
 
-            //System.out.println(Arrays.toString(new ArrayList[]{dutch_flag_sort(input)}));
       }
 
       static ArrayList<Integer> merge_one_into_another(ArrayList<Integer> first, ArrayList<Integer> second) {
