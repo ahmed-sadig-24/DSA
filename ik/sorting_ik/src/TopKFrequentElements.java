@@ -21,7 +21,7 @@ public class TopKFrequentElements {
             }
 
             ArrayList<Integer> result = new ArrayList<>();
-            for (int i = 0; i < k; i++) {
+            for (int i = k - 1; i >= 0; i--) {
                   result.add(pq.poll().getKey());
             }
 
