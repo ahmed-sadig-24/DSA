@@ -1,5 +1,6 @@
 public class FibonacciNumber {
       public static int fib(int n) {
+            // base case
             if (n == 0 || n == 1) return n;
 
             int[] mem = new int[n + 1];
