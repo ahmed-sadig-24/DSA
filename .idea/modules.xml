@@ -8,6 +8,7 @@
       <module fileurl="file://$PROJECT_DIR$/leetcode/Strings/Strings.iml" filepath="$PROJECT_DIR$/leetcode/Strings/Strings.iml" />
       <module fileurl="file://$PROJECT_DIR$/algorithms/algorithms.iml" filepath="$PROJECT_DIR$/algorithms/algorithms.iml" />
       <module fileurl="file://$PROJECT_DIR$/leetcode/arrays/arrays.iml" filepath="$PROJECT_DIR$/leetcode/arrays/arrays.iml" />
+      <module fileurl="file://$PROJECT_DIR$/leetcode/backtracking/backtracking.iml" filepath="$PROJECT_DIR$/leetcode/backtracking/backtracking.iml" />
       <module fileurl="file://$PROJECT_DIR$/datastructures/binarysearchtree/binarysearchtree.iml" filepath="$PROJECT_DIR$/datastructures/binarysearchtree/binarysearchtree.iml" />
       <module fileurl="file://$PROJECT_DIR$/leetcode/binmanipulation/binmanipulation.iml" filepath="$PROJECT_DIR$/leetcode/binmanipulation/binmanipulation.iml" />
       <module fileurl="file://$PROJECT_DIR$/algorithms/sorts/bubblesort/bubblesort.iml" filepath="$PROJECT_DIR$/algorithms/sorts/bubblesort/bubblesort.iml" />
