@@ -33,6 +33,7 @@
       <module fileurl="file://$PROJECT_DIR$/algorithms/sorts/quicksort/quicksort.iml" filepath="$PROJECT_DIR$/algorithms/sorts/quicksort/quicksort.iml" />
       <module fileurl="file://$PROJECT_DIR$/recursion/recursion.iml" filepath="$PROJECT_DIR$/recursion/recursion.iml" />
       <module fileurl="file://$PROJECT_DIR$/ik/recursion_ik/recursion_ik.iml" filepath="$PROJECT_DIR$/ik/recursion_ik/recursion_ik.iml" />
+      <module fileurl="file://$PROJECT_DIR$/leetcode/recursion_lc/recursion_lc.iml" filepath="$PROJECT_DIR$/leetcode/recursion_lc/recursion_lc.iml" />
       <module fileurl="file://$PROJECT_DIR$/leetcode/romantointeger/romantointeger.iml" filepath="$PROJECT_DIR$/leetcode/romantointeger/romantointeger.iml" />
       <module fileurl="file://$PROJECT_DIR$/algorithms/sorts/selectionsort/selectionsort.iml" filepath="$PROJECT_DIR$/algorithms/sorts/selectionsort/selectionsort.iml" />
       <module fileurl="file://$PROJECT_DIR$/leetcode/slidingwindow/slidingwindow.iml" filepath="$PROJECT_DIR$/leetcode/slidingwindow/slidingwindow.iml" />
