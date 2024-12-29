@@ -22,7 +22,7 @@ public class BSTDelete {
             }
 
             for (int v: values_to_be_deleted) {
-                 root = deleteNode(root ,v);
+                  deleteNode(root ,v);
             }
             return root;
       }
