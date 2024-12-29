@@ -152,4 +152,15 @@ public class BTMaxDepth {
 
             return maxDepth;
       }
+
+      public static int maxDepthRecursion(TreeNode root) {
+            if (root == null) {
+                  return 0;
+            }
+
+            int leftDepth = maxDepthRecursion(root.left);
+            int rightDepth = maxDepthRecursion(root.right);
+
+            return Math.max(leftDepth, rightDepth) + 1;
+      }
 }
