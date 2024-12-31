@@ -76,7 +76,7 @@ public class BSTDelete {
 
               */
 
-            BinaryTreeNode root = new BinaryTreeNode()
+            BinaryTreeNode root = new BinaryTreeNode(1);
 
             //System.out.println(minValue(root.right));
 
