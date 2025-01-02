@@ -26,52 +26,6 @@ public class MaximumWidthofBinaryTree {
             }
       }
 
-      public static int widthOfBinaryTree(TreeNode root) {
-            if (root == null) return 0;
-
-            // Use a queue to store nodes and their indices
-            Queue<TreeNode> queue = new LinkedList<>();
-            HashMap<TreeNode, Integer> indexMap = new HashMap<>();
-
-            queue.offer(root);
-            indexMap.put(root, 0); // Start with root at index 0
-
-            int maxWidth = 0;
-
-            while (!queue.isEmpty()) {
-                  int size = queue.size();
-                  int levelStart = indexMap.get(queue.peek()); // Leftmost index in the level
-                  int levelEnd = levelStart; // Initialize rightmost index
-
-                  for (int i = 0; i < size; i++) {
-                        TreeNode node = queue.poll();
-                        int index = indexMap.get(node);
-                        //System.out.println("index: " + index);
-
-                        // Update the rightmost index in the level
-                        levelEnd = index;
-                        //System.out.println(node.val);
-                        System.out.println("level end: " + levelEnd);
-                        System.out.println("level start: " + levelStart);
-
-                        // Enqueue left and right children with their respective indices
-                        if (node.left != null) {
-                              queue.offer(node.left);
-                              indexMap.put(node.left, 2 * index);
-                        }
-                        if (node.right != null) {
-                              queue.offer(node.right);
-                              indexMap.put(node.right, 2 * index + 1);
-                        }
-                  }
-
-                  // Update maximum width
-                  maxWidth = Math.max(maxWidth, levelEnd - levelStart + 1);
-            }
-
-            return maxWidth;
-      }
-
       public static int widthOfBinaryTree2(TreeNode root) {
             if (root == null) {
                   return 0;
@@ -118,7 +72,6 @@ public class MaximumWidthofBinaryTree {
             root.left.right = new TreeNode(3);
             root.right.right = new TreeNode(9);
 
-            //System.out.println(widthOfBinaryTree(root));
             System.out.println(widthOfBinaryTree2(root));
       }
 
