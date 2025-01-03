@@ -19,10 +19,10 @@ public class NumberOfIsland {
 
             grid[r][c] = '0';
 
-            bfs(grid, r + 1, c); //up
-            bfs(grid, r - 1, c); // down
-            bfs(grid, r, c - 1); // left
-            bfs(grid, r, c + 1); // right
+            dfs(grid, r + 1, c); //up
+            dfs(grid, r - 1, c); // down
+            dfs(grid, r, c - 1); // left
+            dfs(grid, r, c + 1); // right
       }
 
       public static void main(String[] args) {
