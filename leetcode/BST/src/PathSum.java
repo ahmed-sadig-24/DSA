@@ -66,7 +66,21 @@ public class PathSum {
 
             int target = 22;
 
-            System.out.println(hasPathSum(root,target));
+            //System.out.println(hasPathSum(root,target));
+            System.out.println(hasPathSumRecursion(root, target));
+      }
+
+      public static boolean hasPathSumRecursion(TreeNode root, int targetSum) {
+            if (root == null) {
+                  return false;
+            }
+
+            if (root.left == null && root.right == null) {
+                  return root.val == targetSum;
+            }
+
+            int newTargetSum = targetSum - root.val;
+            return hasPathSumRecursion(root.left, newTargetSum) || hasPathSumRecursion(root.right, newTargetSum);
       }
 }
 
