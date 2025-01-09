@@ -16,6 +16,7 @@
       <module fileurl="file://$PROJECT_DIR$/leetcode/dll/dll.iml" filepath="$PROJECT_DIR$/leetcode/dll/dll.iml" />
       <module fileurl="file://$PROJECT_DIR$/datastructures/doublylinkedlist/doublylinkedlist.iml" filepath="$PROJECT_DIR$/datastructures/doublylinkedlist/doublylinkedlist.iml" />
       <module fileurl="file://$PROJECT_DIR$/leetcode/dynamicprogramming/dynamicprogramming.iml" filepath="$PROJECT_DIR$/leetcode/dynamicprogramming/dynamicprogramming.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ik/dynamicprogramming_ik/dynamicprogramming_ik.iml" filepath="$PROJECT_DIR$/ik/dynamicprogramming_ik/dynamicprogramming_ik.iml" />
       <module fileurl="file://$PROJECT_DIR$/datastructures/graph/graph.iml" filepath="$PROJECT_DIR$/datastructures/graph/graph.iml" />
       <module fileurl="file://$PROJECT_DIR$/datastructures/hashtable/hashtable.iml" filepath="$PROJECT_DIR$/datastructures/hashtable/hashtable.iml" />
       <module fileurl="file://$PROJECT_DIR$/leetcode/hashtables/hashtables.iml" filepath="$PROJECT_DIR$/leetcode/hashtables/hashtables.iml" />
