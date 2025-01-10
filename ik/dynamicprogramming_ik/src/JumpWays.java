@@ -21,7 +21,7 @@ public class JumpWays {
             int n = 8;
 
             System.out.println(jump_ways(n));
-            System.out.println(Long.MAX_VALUE);
+            //System.out.println(Long.MAX_VALUE);
       }
 
 }
