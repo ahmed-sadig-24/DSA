@@ -8,11 +8,12 @@ public class CoinChange {
 
                   for (int coin: coins) {
                         if (coin <=i && dp[i - coin] != Integer.MAX_VALUE) {
+                              if (i == 4) System.out.println(dp[3]);
                               dp[i] = Math.min(dp[i], 1 +  dp[i - coin]);
-                              System.out.println("i: " + i);
-                              System.out.println("coin: " + coin);
-                              System.out.println("dp[i]: " +  dp[i]);
-                              System.out.println("dp[i - coin]: " + dp[i - coin]);
+                              //System.out.println("i: " + i);
+                              //System.out.println("coin: " + coin);
+                              //System.out.println("dp[i]: " +  dp[i]);
+                              //System.out.println("dp[i - coin]: " + dp[i - coin]);
                         }
                   }
             }
