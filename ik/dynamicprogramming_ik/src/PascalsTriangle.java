@@ -19,7 +19,7 @@ public class PascalsTriangle {
                   if (i > 0) {
                         ArrayList<Integer> prevRow = result.get(i - 1);
                         for (int j = 1; j < i; j++) {
-                              row.add(prevRow.get(j - 1) + prevRow.get(j) % mod);
+                              row.add((prevRow.get(j - 1) + prevRow.get(j)) % mod);
                         }
                         row.add(1);
                   }
