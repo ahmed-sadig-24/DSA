@@ -1,3 +1,5 @@
+import java.util.Collections;
+
 public class LongestIncreasingSubsequence {
       public static int lengthOfLIS(int[] nums) {
             int[] dp = new int[nums.length];
