@@ -34,4 +34,26 @@ public class TargetSum {
             System.out.println(findTargetSumWays(nums1, target1));
             System.out.println(findTargetSumWays(nums2, target2));
       }
+
+      public static int findTargetSumWays2(int[] nums, int target) {
+            Map<Integer, Integer> dp = new HashMap<>();
+            dp.put(0, 1);
+
+            for (int num: nums) {
+                  Map<Integer, Integer> nextDP = new HashMap<>();
+
+                  for (Map.Entry<Integer, Integer> entry: dp.entrySet()) {
+                        int sum = entry.getKey();
+                        int count = entry.getValue();
+
+                        nextDP.getOrDefault(sum + count, nextDP.getOrDefault(sum + count,0) + count);
+
+                        nextDP.getOrDefault(sum - count, nextDP.getOrDefault(sum - count, 0) + count);
+                  }
+
+                  dp = nextDP;
+            }
+
+            return dp.getOrDefault(target, 0);
+      }
 }
