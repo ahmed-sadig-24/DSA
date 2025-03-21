@@ -32,7 +32,8 @@ public class TargetSum {
             int target2 = 1;
 
             System.out.println(findTargetSumWays(nums1, target1));
-            System.out.println(findTargetSumWays(nums2, target2));
+            System.out.println(findTargetSumWays2(nums1, target1));
+            //System.out.println(findTargetSumWays(nums2, target2));
       }
 
       public static int findTargetSumWays2(int[] nums, int target) {
@@ -46,9 +47,9 @@ public class TargetSum {
                         int sum = entry.getKey();
                         int count = entry.getValue();
 
-                        nextDP.getOrDefault(sum + count, nextDP.getOrDefault(sum + count,0) + count);
+                        nextDP.put(sum + num, nextDP.getOrDefault(sum + num,0) + count);
 
-                        nextDP.getOrDefault(sum - count, nextDP.getOrDefault(sum - count, 0) + count);
+                        nextDP.put(sum - num, nextDP.getOrDefault(sum - num, 0) + count);
                   }
 
                   dp = nextDP;
