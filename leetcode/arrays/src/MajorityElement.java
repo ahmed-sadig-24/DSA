@@ -1,3 +1,5 @@
+import java.util.Arrays;
+
 public class MajorityElement {
       public static int majorityElement(int[] nums) {
             int majority = nums[0], votes = 1;
@@ -21,5 +23,14 @@ public class MajorityElement {
             int[] nums = {2,2,1,1,1,2,2};
 
             System.out.println(majorityElement(nums));
+            System.out.println(majorityElementSorting(nums));
+      }
+
+      public static int majorityElementSorting(int[] nums) {
+            Arrays.sort(nums);
+
+            int mid = nums.length / 2;
+
+            return nums[mid];
       }
 }
