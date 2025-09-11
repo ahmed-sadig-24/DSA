@@ -8,7 +8,7 @@ public class ZeroOneMatrix {
 
             for (int i = 0; i < rows; i++) {
                   for (int j = 0; j < cols; j++) {
-                        result[i][j] = Integer.MAX_VALUE;
+                        result[i][j] = Integer.MAX_VALUE / 2;
                   }
             }
 
@@ -61,6 +61,48 @@ public class ZeroOneMatrix {
             int[][] result = new int[rows][cols];
 
             //Arrays.fill(result, Integer.MAX_VALUE);
+            for (int r = 0; r < rows; r++) {
+                  for (int c = 0; c < cols; c++) {
+                        result[r][c] = Integer.MAX_VALUE;
+                  }
+            }
+
+            for (int r = 0; r < rows; r++) {
+                  for (int c = 0; c < cols; c++) {
+                        if (mat[r][c] == 0) {
+                              result[r][c] = 0;
+                        } else {
+                              if (r > 0) {
+                                    result[r][c] = Math.min(result[r][c], result[r - 1][c] + 1);
+                              }
+                              if (c > 0) {
+                                    result[r][c] = Math.min(result[r][c], result[r][c - 1] + 1);
+                              }
+                        }
+                  }
+            }
+
+            for (int r = rows - 1; r >= 0; r--) {
+                  for (int c = cols - 1; c >= 0; c--) {
+                        if (mat[r][c] != 0) {
+                              if (r < rows - 1) {
+                                    result[r][c] = Math.min(result[r][c], result[r + 1][c] + 1);
+                              }
+                              if (c < cols - 1) {
+                                    result[r][c] = Math.min(result[r][c], result[r][c + 1] + 1);
+                              }
+                        }
+                  }
+            }
+
+            return result;
+      }
+
+      public static int[][] updateMatrix3(int[][] mat) {
+            int rows = mat.length;
+            int cols = mat[0].length;
+            int[][] result = new int[rows][cols];
+
             for (int r = 0; r < rows; r++) {
                   for (int c = 0; c < cols; c++) {
                         result[r][c] = Integer.MAX_VALUE;

@@ -37,4 +37,21 @@ public class RemoveNthNodeFromEnd {
             return preHead.next;
       }
 
+      public ListNode removeNthFromEnd2(ListNode head, int n) {
+            ListNode sentinel = new ListNode(Integer.MIN_VALUE,head);
+            ListNode slow = sentinel;
+            ListNode fast = sentinel;
+
+            for (int i = 0; i < n; i++) {
+                  fast = fast.next;
+            }
+
+            while (fast.next != null) {
+                  fast = fast.next;
+                  slow = slow.next;
+            }
+            slow.next = slow.next.next;
+
+            return sentinel.next;
+      }
 }

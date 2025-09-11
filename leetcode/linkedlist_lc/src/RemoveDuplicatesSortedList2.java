@@ -34,4 +34,23 @@ public class RemoveDuplicatesSortedList2 {
 
             return dummy.next;
       }
+
+      public ListNode deleteDuplicates2(ListNode head) {
+            ListNode sentinel = new ListNode(Integer.MIN_VALUE, head);
+            ListNode currNode = sentinel;
+
+            while (currNode.next != null) {
+                  if (currNode.next.next != null && currNode.next.val == currNode.next.next.val) {
+                        int deleteValue = currNode.next.val;
+                        ListNode scoutP = currNode.next;
+                        while (scoutP != null && scoutP.val == deleteValue) {
+                              scoutP = scoutP.next;
+                              currNode.next = scoutP;
+                        }
+                  } else {
+                        currNode = currNode.next;
+                  }
+            }
+            return sentinel.next;
+      }
 }
