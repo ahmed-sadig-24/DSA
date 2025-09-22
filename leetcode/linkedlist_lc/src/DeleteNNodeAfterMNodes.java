@@ -9,18 +9,26 @@ public class DeleteNNodeAfterMNodes {
       }
 
       public ListNode deleteNodes(ListNode head, int m, int n) {
-            ListNode current = head;
+            ListNode sentinel = new ListNode(Integer.MIN_VALUE, head);
+            ListNode curr = sentinel;
 
-            while (current.next != null) {
+            while (curr.next != null) {
                   for (int i = 0; i < m; i++) {
-                        current = current.next;
+                        curr = curr.next;
+                        if (curr == null) return sentinel.next;
                   }
 
+                  ListNode scout = curr;
                   for (int i = 0; i < n; i++) {
-                        current.next = current.next.next;
+                        if (scout.next == null) {
+                              curr.next = null;
+                              return sentinel.next;
+                        }
+                        scout = scout.next;
                   }
+                  curr.next = scout.next;
             }
 
-            return head;
+            return sentinel.next;
       }
 }
