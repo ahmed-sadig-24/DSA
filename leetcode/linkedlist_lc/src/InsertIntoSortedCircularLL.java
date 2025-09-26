@@ -41,7 +41,10 @@ public class InsertIntoSortedCircularLL {
                   }
 
                   currNode = nextNode;
+                  if (currNode == head) break;
 
             }
+            currNode.next = new Node(insertVal, currNode.next);
+            return head;
       }
 }
