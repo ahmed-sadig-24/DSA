@@ -3,11 +3,13 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/leetcode/BST/BST.iml" filepath="$PROJECT_DIR$/leetcode/BST/BST.iml" />
+      <module fileurl="file://$PROJECT_DIR$/leetcode/patterns/BinarySearch/BinarySearch.iml" filepath="$PROJECT_DIR$/leetcode/patterns/BinarySearch/BinarySearch.iml" />
       <module fileurl="file://$PROJECT_DIR$/DSA.iml" filepath="$PROJECT_DIR$/DSA.iml" />
       <module fileurl="file://$PROJECT_DIR$/leetcode/Graph/Graph.iml" filepath="$PROJECT_DIR$/leetcode/Graph/Graph.iml" />
       <module fileurl="file://$PROJECT_DIR$/leetcode/patterns/HashMap/HashMap.iml" filepath="$PROJECT_DIR$/leetcode/patterns/HashMap/HashMap.iml" />
       <module fileurl="file://$PROJECT_DIR$/leetcode/patterns/SlidingWindow/SlidingWindow.iml" filepath="$PROJECT_DIR$/leetcode/patterns/SlidingWindow/SlidingWindow.iml" />
       <module fileurl="file://$PROJECT_DIR$/leetcode/Strings/Strings.iml" filepath="$PROJECT_DIR$/leetcode/Strings/Strings.iml" />
+      <module fileurl="file://$PROJECT_DIR$/leetcode/Trees/Trees.iml" filepath="$PROJECT_DIR$/leetcode/Trees/Trees.iml" />
       <module fileurl="file://$PROJECT_DIR$/leetcode/patterns/TwoPointers/TwoPointers.iml" filepath="$PROJECT_DIR$/leetcode/patterns/TwoPointers/TwoPointers.iml" />
       <module fileurl="file://$PROJECT_DIR$/algorithms/algorithms.iml" filepath="$PROJECT_DIR$/algorithms/algorithms.iml" />
       <module fileurl="file://$PROJECT_DIR$/leetcode/arrays/arrays.iml" filepath="$PROJECT_DIR$/leetcode/arrays/arrays.iml" />
