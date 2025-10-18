@@ -58,13 +58,12 @@ public class ValidateBinarySearchTree {
       }
 
       public static boolean isValidBSTMorris(TreeNode root) {
-            boolean isBST = true;
-            int prev = Integer.MIN_VALUE;
+            Integer prev = null;
 
             TreeNode curr = root;
             while (curr != null) {
                   if (curr.left == null) {
-                        if (curr.val <= prev) return false;
+                        if (prev != null && curr.val <= prev) return false;
                         prev = curr.val;
 
                         curr = curr.right;
@@ -79,7 +78,7 @@ public class ValidateBinarySearchTree {
                         } else {
                               predecessor.right = null;
                               //
-                              if (curr.val <= prev) return false;
+                              if (prev != null && curr.val <= prev) return false;
                               prev = curr.val;
 
                               curr = curr.right;
