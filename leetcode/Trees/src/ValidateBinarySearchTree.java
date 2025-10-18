@@ -54,5 +54,39 @@ public class ValidateBinarySearchTree {
             root.right = new TreeNode(3);
 
             System.out.println(isValidBST(root));
+            System.out.println(isValidBSTMorris(root));
+      }
+
+      public static boolean isValidBSTMorris(TreeNode root) {
+            boolean isBST = true;
+            int prev = Integer.MIN_VALUE;
+
+            TreeNode curr = root;
+            while (curr != null) {
+                  if (curr.left == null) {
+                        if (curr.val <= prev) return false;
+                        prev = curr.val;
+
+                        curr = curr.right;
+                  } else {
+                        TreeNode predecessor = curr.left;
+                        while (predecessor.right != curr && predecessor.right != null) {
+                              predecessor = predecessor.right;
+                        }
+                        if (predecessor.right == null) {
+                              predecessor.right = curr;
+                              curr = curr.left;
+                        } else {
+                              predecessor.right = null;
+                              //
+                              if (curr.val <= prev) return false;
+                              prev = curr.val;
+
+                              curr = curr.right;
+                        }
+                  }
+            }
+
+            return true;
       }
 }
