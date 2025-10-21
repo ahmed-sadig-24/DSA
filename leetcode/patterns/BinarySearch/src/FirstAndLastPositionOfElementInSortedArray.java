@@ -2,7 +2,7 @@ import java.util.Arrays;
 
 public class FirstAndLastPositionOfElementInSortedArray {
       public static int[] searchRange(int[] nums, int target) {
-            int left = FirstAndLastPositionOfElementInSortedArray.findLeftIndex(nums, target);
+            int left = findLeftIndex(nums, target);
             int right = findRightIndex(nums, target);
 
             return new int[]{left, right};
