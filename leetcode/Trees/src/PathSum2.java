@@ -37,7 +37,7 @@ public class PathSum2 {
 
             current.add(node.val);
             if (node.left == null && node.right == null && node.val == targetSum) {
-                  paths.add(current);
+                  paths.add(new ArrayList<>(current));
             } else {
                   helper(node.left, targetSum - node.val, current, paths);
                   helper(node.right, targetSum - node.val, current, paths);

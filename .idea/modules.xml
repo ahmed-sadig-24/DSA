@@ -28,6 +28,7 @@
       <module fileurl="file://$PROJECT_DIR$/datastructures/heap/heap.iml" filepath="$PROJECT_DIR$/datastructures/heap/heap.iml" />
       <module fileurl="file://$PROJECT_DIR$/leetcode/heaps/heaps.iml" filepath="$PROJECT_DIR$/leetcode/heaps/heaps.iml" />
       <module fileurl="file://$PROJECT_DIR$/ik/ik.iml" filepath="$PROJECT_DIR$/ik/ik.iml" />
+      <module fileurl="file://$PROJECT_DIR$/infosys/infosys.iml" filepath="$PROJECT_DIR$/infosys/infosys.iml" />
       <module fileurl="file://$PROJECT_DIR$/algorithms/sorts/insertionsort/insertionsort.iml" filepath="$PROJECT_DIR$/algorithms/sorts/insertionsort/insertionsort.iml" />
       <module fileurl="file://$PROJECT_DIR$/leetcode/leetcode.iml" filepath="$PROJECT_DIR$/leetcode/leetcode.iml" />
       <module fileurl="file://$PROJECT_DIR$/datastructures/linkedlist/linkedlist.iml" filepath="$PROJECT_DIR$/datastructures/linkedlist/linkedlist.iml" />

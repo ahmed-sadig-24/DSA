@@ -28,16 +28,16 @@ public class MinimumAbsoluteDifferenceInBST {
             return minDiff;
       }
 
-      private static void dfs(TreeNode TreeNode) {
-            if (TreeNode == null) return;
+      private static void dfs(TreeNode node) {
+            if (node == null) return;
 
-            dfs(TreeNode.left);
+            dfs(node.left);
 
-            if (prev != null)  minDiff = Math.min(minDiff, TreeNode.val - prev);
+            if (prev != null)  minDiff = Math.min(minDiff, node.val - prev);
             
-            prev = TreeNode.val;
+            prev = node.val;
 
-            dfs(TreeNode.right);
+            dfs(node.right);
       }
 
       public static void main(String[] args) {
