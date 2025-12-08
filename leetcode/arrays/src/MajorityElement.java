@@ -24,6 +24,7 @@ public class MajorityElement {
 
             System.out.println(majorityElement(nums));
             System.out.println(majorityElementSorting(nums));
+            System.out.println(majorityElementBF(nums));
       }
 
       public static int majorityElementSorting(int[] nums) {
@@ -33,4 +34,20 @@ public class MajorityElement {
 
             return nums[mid];
       }
+
+      public static int majorityElementBF(int[] nums) {
+            int n = nums.length;
+            for (int i = 0; i < n; i++) {
+                  int count = 0;
+
+                  for (int j = 0; j < n; j++) {
+                        if (nums[i] == nums[j]) count++;
+                  }
+
+                  if (count > n / 2) return nums[i];
+            }
+
+            return -1;
+      }
+
 }
