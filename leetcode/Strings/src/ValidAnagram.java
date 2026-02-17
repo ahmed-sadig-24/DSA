@@ -1,3 +1,5 @@
+import java.util.Arrays;
+
 public class ValidAnagram {
       public static boolean isAnagram(String s, String t) {
             s = s.replace(" ", "");
@@ -22,10 +24,26 @@ public class ValidAnagram {
             return true;
       }
 
+      public static boolean isAnagramBF(String s, String t) {
+            if (s.length() != t.length()) return false;
+
+            s = s.toLowerCase();
+            t = t.toLowerCase();
+
+            char[] sArr = s.toCharArray();
+            char[] tArr = t.toCharArray();
+
+            Arrays.sort(sArr);
+            Arrays.sort(tArr);
+
+            return Arrays.equals(sArr, tArr);
+      }
+
       public static void main(String[] args) {
             String s = "silent";
             String t = "listen";
 
             System.out.println(isAnagram(s, t));
+            System.out.println(isAnagramBF(s, t));
       }
 }
